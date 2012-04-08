@@ -3,8 +3,9 @@
 
 
 
-<div class="container_8">
-	<div class="grid_2">
+<div class="container_20">
+  <div class="grid_4">
+	<div class="grid_4">
 		<div class="LightShadedBox">
 			<div class="TinyShadedBox">
 				<font size="3"></font>
@@ -13,7 +14,9 @@
 			<br> <br>
 		</div>
 	</div>
-	<div class="grid_5">
+   </div>
+  <div class="grid_16">
+	<div class="grid_6">
 		<div
 			class="fieldcontain ${hasErrors(bean: personaInstance, field: 'nombres', 'error')} required">
 			<label for="nombres"> <g:message code="persona.nombres.label"
@@ -23,7 +26,7 @@
 				value="${personaInstance?.nombres}" class="long ui-corner-all" />
 		</div>
 	</div>
-	<div class="grid_5">
+	<div class="grid_6">
 		<div
 			class="fieldcontain ${hasErrors(bean: personaInstance, field: 'apellidos', 'error')} required">
 			<label for="apellidos"> <g:message
@@ -34,7 +37,9 @@
 				value="${personaInstance?.apellidos}" class="long ui-corner-all" />
 		</div>
 	</div>
-	<div class="grid_3">
+    <div class="clear"></div>
+    <div class="grid_16">&nbsp;</div>
+	<div class="grid_4">
 		<div
 			class="fieldcontain ${hasErrors(bean: personaInstance, field: 'clasificacion', 'error')} required">
 			<label for="clasificacion"> <g:message
@@ -47,7 +52,9 @@
 				class="many-to-one ui-widget ui-widget-content ui-corner-left" />
 		</div>
 	</div>
-	<div class="grid_3">
+  <div class="grid_5"></div>
+  
+	<div class="grid_6">
 		<div
 			class="fieldcontain ${hasErrors(bean: personaInstance, field: 'sexo', 'error')} required">
 			<label for="sexo"> <g:message code="persona.sexo.label"
@@ -79,7 +86,7 @@
 		</div>
 	</div>
 	<div class="clear"></div>
-	<div class="grid_4">&nbsp;&nbsp;</div>
+	<div class="grid_16">&nbsp;&nbsp;</div>
 	<div class="grid_5">
 		<div
 			class="fieldcontain ${hasErrors(bean: personaInstance, field: 'twitter', 'error')} ">
@@ -103,7 +110,7 @@
 	</div>
 	<div class="clear"></div>
 	<g:hiddenField name="iglesia.id" value="1" />
-
+  </div>
 	<%--<div class="grid_2">
 		<div
 			class="fieldcontain ${hasErrors(bean: personaInstance, field: 'imgFoto', 'error')} required">

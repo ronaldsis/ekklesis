@@ -22,10 +22,13 @@
 	type="text/css">
 
 <link rel="stylesheet"
-	href="${resource(dir: 'css', file: '960.css')}"
+	href="${resource(dir: 'css', file: '760.css')}"
 	type="text/css">
 <link rel="stylesheet"
-	href="${resource(dir: 'css', file: 'text.css')}"
+	href="${resource(dir: 'css', file: '760.margin.css')}"
+        type="text/css">
+<link rel="stylesheet"
+	href="${resource(dir: 'css', file: 'text2.css')}"
 	type="text/css">
 
 

@@ -1,6 +1,6 @@
 import com.ekklesis.Rol
 import com.ekklesis.Usuario
-import org.apache.catalina.User
+//import org.apache.catalina.User
 import org.ekklesis.ClasificacionPersona
 import org.ekklesis.Iglesia
 import com.ekklesis.UsuarioRol

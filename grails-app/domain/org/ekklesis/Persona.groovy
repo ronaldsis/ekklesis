@@ -3,7 +3,7 @@ package org.ekklesis
 class Persona {
     String nombres
     String apellidos
-	String sexo
+    String sexo
     Date dateCreated
     Date lastUpdated
     byte[] imgFoto
