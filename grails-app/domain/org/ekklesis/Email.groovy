@@ -5,7 +5,7 @@ class Email {
     String email
     String status
 
-    static belongsTO=[
+    static belongsTo=[
         persona:Persona
     ]
     static constraints = {
