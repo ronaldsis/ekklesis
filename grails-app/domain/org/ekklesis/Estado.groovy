@@ -5,4 +5,9 @@ class Estado {
 	static hasMany = [municipios:Municipio]
 	static constraints = {
 	}
+        
+    String toString(){
+        nombre
+    }
+    
 }
