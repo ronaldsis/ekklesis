@@ -9,7 +9,7 @@ class Organizacion {
     String zip
     String telefono
     Persona lider
-    static hashMany=[iglesias:Iglesia]
+    static hasMany=[iglesias:Iglesia]
     static constraints = {
     }
     String toString(){
