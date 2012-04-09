@@ -5,3 +5,5 @@ target
 \.chg\..*$
 \.rej$
 \.conflict\~$
+*.class
+.project
