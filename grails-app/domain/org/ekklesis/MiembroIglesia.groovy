@@ -7,7 +7,7 @@ class MiembroIglesia extends Persona{
     Date fechaBautismo
     Date fechaMembresia
     static belongsTo=[razon:RazonMembresia, iglesia:Iglesia]
-    static hashMani=[diezmos:DiezmoMiembro]
+    static hasMany=[diezmos:DiezmoMiembro]
     static constraints = {
     }
 }
