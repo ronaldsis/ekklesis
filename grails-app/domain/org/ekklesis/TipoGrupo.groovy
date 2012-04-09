@@ -3,7 +3,7 @@ package org.ekklesis
 class TipoGrupo {
     String nombre
     String descripcion
-    static hashMany = [grupos:Grupo]
+    static hasMany = [grupos:Grupo]
     static constraints = {
         descripcion(maxSize:1000)
     }
