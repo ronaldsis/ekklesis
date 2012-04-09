@@ -19,6 +19,7 @@ class Iglesia {
     Date lastUpdated
     // static belongsTo  = [organizacion:Organizacion]
     //static hashMany = [pastor:Organizacion]
+    static hasMany = [grupo:Grupo]
     static constraints = {
         nombre(nullable:false, unique:true, blank:false, size:8..200)
         rif(nullable:true,size:1..12, unique:true)
@@ -28,7 +29,7 @@ class Iglesia {
         web (url: true)
         email(email:true)
     }
-    String toSring(){
-			"{$nombre}"
+    String toString(){
+	nombre
     }
 }
