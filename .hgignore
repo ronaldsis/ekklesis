@@ -1,0 +1,9 @@
+syntax: glob
+target
+\.orig\..*$
+\.orig$
+\.chg\..*$
+\.rej$
+\.conflict\~$
+*.class
+.project
