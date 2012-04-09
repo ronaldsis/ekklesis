@@ -5,8 +5,7 @@ class RolGrupo {
     String descripcion
     static belongsTo=[grupo:Grupo]
     static hasMany=[
-     //   grupos:Grupo,
-        personas:Persona
+        grupos:Grupo
     ]
     static constraints = {
     }
