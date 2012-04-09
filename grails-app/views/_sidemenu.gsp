@@ -9,16 +9,16 @@
 		<ul class="side-menu">
 			<li><a href="#">Iglesia </a>
 				<ul>
-					<li><g:link controller="iglesia" action="create">Ingresar Datos</g:link></li>
-					<li><g:link controller="iglesia" action="show" id="1">Informaci&oacute;n</g:link></li>
-					<li><a href="/iglesia/create">Editar Informaci&oacute;n</a></li>
-				</ul></li>
-			<li><a href="#">Miembro</a>
+                                  <li><g:link controller="familia" action="ed5t" onClick="self.location='${request.contextPath}/iglesia/edit/1';">Editar Informaci&oacute;n</g:link></li>
+                                <li><g:link controller="familia" action="create" onClick="self.location='${request.contextPath}/iglesia/show/1';">Ver Informaci&oacute;n</g:link></li>
+					
+				</ul>
+			</li>
+			<li><a href="#">Miembros</a>
 				<ul>
-					<li><a href="#">Registrar Miembro</a></li>
-					<li><a href="#">Buscar Miembro</a></li>
-					<li><a href="#">Ver todos</a></li>
-				</ul></li>
+					<li><g:link controller="familia" action="create" onClick="self.location='${request.contextPath}/persona/list';">Listado</g:link></li>
+				</ul>
+			</li>
 			
 		</ul>
 

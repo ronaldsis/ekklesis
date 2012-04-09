@@ -12,13 +12,11 @@
 <body>
 	<div id="main-panel">
 		<div class="ae-widget-sidebar minimizable">
-			<h4 class="ae-widget-header">Lista de ...</h4>
+			<h4 class="ae-widget-header">Lista de Tipos de Grupos</h4>
 			<div class="ae-widget-content">
 				<div id="list-tipoGrupo"
 					class="content scaffold-list" role="main">
-					<h1>
-						<g:message code="default.list.label" args="[entityName]" />
-					</h1>
+					
 					<g:if test="${flash.message}">
 						<div class="message success" role="status">${flash.message}</div>
 					</g:if>

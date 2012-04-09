@@ -1,8 +1,8 @@
-dataSource {
+    dataSource {
     pooled = true
-    driverClassName = "org.h2.Driver"
-    username = "sa"
-    password = ""
+    driverClassName = "org.postgresql.Driver"
+    username = "postgres"
+    password = "postgres"
 }
 hibernate {
     cache.use_second_level_cache = true
@@ -12,21 +12,44 @@ hibernate {
 // environment specific settings
 environments {
     development {
-        dataSource {
+        /*dataSource {
             dbCreate = "update" // one of 'create', 'create-drop', 'update', 'validate', ''
             url = "jdbc:h2:mem:devDb;MVCC=TRUE"
+        }*/
+        
+        // relative to web-app
+	//jasper.dir.reports = '../src/reports'
+            
+        dataSource {
+            dbCreate = "create" // one of 'create', 'create-drop','update'
+            driverClassName = "org.postgresql.Driver"
+            url = "jdbc:postgresql://localhost:5432/ekklesis"
+            dialect = org.hibernate.dialect.PostgreSQLDialect
+            username = "postgres"
+            password = "postgres" 
         }
+            
     }
     test {
         dataSource {
             dbCreate = "update"
-            url = "jdbc:h2:mem:testDb;MVCC=TRUE"
+            url = "jdbc:postgresql:testDb;MVCC=TRUE"
         }
     }
     production {
+        
         dataSource {
+            dbCreate = "create-drop" // one of 'create', 'create-drop','update'
+            driverClassName = "org.postgresql.Driver"
+            url = "jdbc:postgresql://localhost:5432/ekklesis"
+            dialect = org.hibernate.dialect.PostgreSQLDialect
+            username = "postgres"
+            password = "postgres" 
+        }
+            
+        /*dataSource {
             dbCreate = "update"
-            url = "jdbc:h2:prodDb;MVCC=TRUE"
+            url = "jdbc:postgresql:prodDb;MVCC=TRUE"
             pooled = true
             properties {
                maxActive = -1
@@ -38,6 +61,6 @@ environments {
                testOnReturn=true
                validationQuery="SELECT 1"
             }
-        }
+        }*/
     }
 }
