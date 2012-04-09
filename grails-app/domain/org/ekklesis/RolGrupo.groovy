@@ -4,7 +4,7 @@ class RolGrupo {
     String rol
     String descripcion
     static belongsTo=[grupo:Grupo]
-    static hashMany=[
+    static hasMany=[
      //   grupos:Grupo,
         personas:Persona
     ]
