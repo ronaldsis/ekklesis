@@ -3,6 +3,10 @@
 
 <div class="container_20">
 
+  <!--Salto de Linea-->
+  <div class="clear"></div>
+  <div class="grid_20">&nbsp;</div>
+  
   <div class="grid_10">
     <div class="fieldcontain ${hasErrors(bean: grupoInstance, field: 'nombre', 'error')} ">
       <label for="nombre">
@@ -26,7 +30,7 @@
 
   <!--Salto de Linea-->
   <div class="clear"></div>
-  <div class="grid_16">&nbsp;</div>
+  <div class="grid_20">&nbsp;</div>
 
   <div class="grid_10">
     <div class="fieldcontain ${hasErrors(bean: grupoInstance, field: 'iglesia', 'error')} required">
@@ -59,7 +63,7 @@
 
   <!--Salto de Linea-->
   <div class="clear"></div>
-  <div class="grid_16">&nbsp;</div>
+  <div class="grid_20">&nbsp;</div>
 
 
   <div class="grid_10">
