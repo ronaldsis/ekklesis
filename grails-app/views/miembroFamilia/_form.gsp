@@ -12,7 +12,7 @@
         <g:message code="miembroFamilia.persona.label" default="Persona" />
         <span class="required-indicator">*</span>
       </label>
-      <g:select id="persona" name="persona.id" from="${org.ekklesis.Persona.list()}" optionKey="id" required="" value="${miembroFamiliaInstance?.persona?.id}" noSelection="['':'Seleccione un Rol']" class="many-to-one ui-widget ui-widget-content ui-corner-left"/>
+      <g:select id="persona" name="persona.id" from="${org.ekklesis.Persona.list()}" optionKey="id" required="" value="${miembroFamiliaInstance?.persona?.id}" noSelection="['':'Seleccione una Persona']" class="many-to-one ui-widget ui-widget-content ui-corner-left"/>
     </div>  
   </div>
 
