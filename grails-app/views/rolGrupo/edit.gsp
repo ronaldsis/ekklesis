@@ -40,10 +40,10 @@
 						<fieldset class="buttons">
 							<table>
 								<tr>
-									<td><g:actionSubmit class="save" action="update"
+									<td><g:actionSubmit class="save button" action="update"
 											value="${message(code: 'default.button.update.label', default: 'Update')}" />
 									</td>
-									<td><g:actionSubmit class="delete" action="delete"
+									<td><g:actionSubmit class="delete button" action="delete"
 											value="${message(code: 'default.button.delete.label', default: 'Delete')}"
 											formnovalidate=""
 											onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Esta usted seguro?')}');" />
