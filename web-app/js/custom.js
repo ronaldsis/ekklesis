@@ -1,10 +1,10 @@
 // JavaScript Document
 
 // Cufon Text replacement
-Cufon.replace('h2,h5,h6', {
+Cufon.replace('h5,h6', {
 	textShadow : '#fff 1px 1px 0px'
 });
-Cufon.replace('h1,#tab>ul li a', {
+Cufon.replace('#tab>ul li a', {
 	textShadow : '#2c2c2c 1px 1px 0px'
 });
 
