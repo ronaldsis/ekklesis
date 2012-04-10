@@ -2,13 +2,13 @@ package org.ekklesis
 
 class Familia {
     String apellidos
-    Direccion direccionPrincipal
-    Telefono telefonoPrincipal
+    String direccionPrincipal
+    String telefonoPrincipal
     Date dateCreated
     Date lastUpdated
     Date fechaMatrimonio
     String email
-    String status
+    Boolean status
     
     static hasMany = [miembrosFamilia:MiembroFamilia]
     static belongsTo = [iglesia:Iglesia]
