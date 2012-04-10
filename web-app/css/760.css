@@ -28,6 +28,13 @@
 	width: 760px;
 }
 
+.container_80
+{
+	margin-left: auto;
+	margin-right: auto;
+        width: 1000px;
+}
+
 .container_20 .grid_1 {
 	width: 38px;
 }
@@ -165,12 +172,31 @@
 .container_76 .grid_73,
 .container_76 .grid_74,
 .container_76 .grid_75,
-.container_76 .grid_76 {
+.container_76 .grid_76, 
+.container_80 .grid_40,
+.container_80 .grid_20,
+.container_80 .grid_80,
+.container_80 .grid_50
+{
 	display: inline;
 	float: left;
 	position: relative;
 	margin-left: 0px;
 	margin-right: 0px;
+}
+
+/*El ancho de container 80 80 , 80 40 y 80 50*/
+.container_80 .grid_40{
+    width: 400px;
+}
+
+.container_80 .grid_80{
+    width: 1000px;
+}
+
+
+.container_80 .grid_50{
+    width: 600px;
 }
 
 .container_20 .grid_10,
@@ -239,6 +265,10 @@
 	width: 190px;
 }
 
+.container_80 .grid_20 {
+    width: 200px;
+}
+
 .container_20 .grid_6 {
 	width: 228px;
 }
@@ -253,6 +283,10 @@
 
 .container_20 .grid_9 {
 	width: 342px;
+}
+
+.container_80 .prefix_40{
+    padding-left: 450px;
 }
 
 .container_20 .prefix_1 {
