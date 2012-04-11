@@ -18,7 +18,7 @@ class GrupoController {
     def create() {
         [grupoInstance: new Grupo(params)]
     }
-    
+
     def crearGrupos() {
         [grupoInstance: new Grupo(params)]
     }
