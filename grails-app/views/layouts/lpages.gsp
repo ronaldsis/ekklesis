@@ -4,6 +4,9 @@
 <!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
 <!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!-->
+<%@page import="javax.sound.midi.ControllerEventListener"%>
+<%@page import="org.codehaus.groovy.grails.web.mapping.DefaultUrlMappingEvaluator.UrlMappingBuilder"%>
+<%@page import="org.apache.ivy.ant.IvyMakePom.Mapping"%>
 <html>
 <!--<![endif]-->
 <head>
@@ -18,7 +21,7 @@
 	type="text/css">
 <!-- End of styleshets  -->
 <link rel="stylesheet"
-	href="${resource(dir: 'css', file: 'reset.css')}"
+	href="${resource(dir: 'css', file: 'rese2t.css')}"
 	type="text/css">
 
 <link rel="stylesheet"
@@ -27,14 +30,10 @@
 <link rel="stylesheet"
 	href="${resource(dir: 'css', file: '760.margin.css')}"
         type="text/css">
-<link rel="stylesheet"
+<%--<link rel="stylesheet"
 	href="${resource(dir: 'css', file: 'text2.css')}"
 	type="text/css">
-
-
-
-
-<!-- Scripts  -->
+--%><!-- Scripts  -->
 <script type="text/javascript"
 	src="${resource(dir: 'js', file: 'jquery-1.4.2.min.js')}"></script>
 <script type="text/javascript"
@@ -66,7 +65,7 @@
 
 	<!-- Start of Message Box, shows when message text is clicked  -->
 
-	<div id="message-box" title="Message Box">
+	<%--<div id="message-box" title="Message Box">
 
 		<h5>Message 1</h5>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -79,7 +78,7 @@
 			Vivamus sit amet ornare lacus.</p>
 
 	</div>
-	<div id="luix-box" title="Informaci&oacute;n de Usuario">
+	--%><div id="luix-box" title="Informaci&oacute;n de Usuario">
 		<h5>Informaci&oacute;n </h5>
 		<p>Nombre:<sec:loggedInUserInfo field="username" /></p>
 	</div>
@@ -137,7 +136,7 @@
 		<!-- End of Left Column  -->
 
 		<!--  Start of Dock -->
-		<g:render template="../menudock" />
+		<g:render template="menudock" contextPath="/" />
 
 
 		<!--  End  of Dock -->
@@ -177,7 +176,7 @@
 
 		<div class="right-col">
 			<!--  Start of Right Column -->
-			<g:render template="../sidemenu" />
+			<g:render template="sidemenu" contextPath='${controllerName?'':'/' }'/>
 			<!-- 
 			<div class="ae-widget-sidebar">
 				<h4 class="ae-widget-header">Recent Activities</h4>
