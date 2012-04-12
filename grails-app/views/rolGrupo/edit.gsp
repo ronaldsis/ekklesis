@@ -14,8 +14,7 @@
 	<div id="main-panel">
 		<div class="ae-widget-sidebar minimizable">
 			<h4 class="ae-widget-header">
-				Editar
-				<g:message code="default.edit.label" args="[entityName]" />
+                          Editar Relaci&oacute;n Rol-Grupo
 			</h4>
 			<div class="ae-widget-content">
 				<div id="edit-rolGrupo"

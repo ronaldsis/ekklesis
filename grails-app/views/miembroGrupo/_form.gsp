@@ -13,7 +13,7 @@
   <div class="ae-widget minimizable">
     <p class="ae-widget-header" align="left">Persona</p>
 
-    <div class="grid_5">
+    <div class="grid_10">
       <div class="fieldcontain ${hasErrors(bean: miembroGrupoInstance, field: 'persona', 'error')} required">
         <label for="persona">
           <g:message code="miembroGrupo.persona.label" default="Persona" />
@@ -23,7 +23,7 @@
       </div>
     </div>
 
-    <div class="grid_5">
+    <div class="grid_6">
       <div class="fieldcontain ${hasErrors(bean: miembroGrupoInstance, field: 'rol', 'error')} required">
         <label for="rol">
           <g:message code="miembroGrupo.rol.label" default="Rol" />
@@ -33,6 +33,9 @@
       </div>
     </div>
 
+    <!--Salto de Linea-->
+  <div class="clear"></div>
+  <div class="grid_20">&nbsp;</div>
     <div class="grid_10">
       <div class="fieldcontain ${hasErrors(bean: miembroGrupoInstance, field: 'grupo', 'error')} required">
         <label for="grupo">
