@@ -37,8 +37,17 @@ grails.resources.modules = {
     core {
         resource url:'/js/jquery-1.7.1.min.js', disposition: 'head'
         resource url:'/js/jquery-ui-1.8.2.custom.min.js', disposition: 'head'
-
-        resource url: '/css/theme/jquery-ui-1.8.2.custom.css'
+		resource url:'/js/jQuery.tree.js', disposition: 'head'
+		resource url:'/js/cufon-yui.js', disposition: 'head'
+		resource url:'/js/jquery.dataTables.min.js', disposition: 'head'
+		resource url:'/js/Quicksand_Book_400.font.js', disposition: 'head'
+		
+		resource url:'/js/custom.js', disposition:'head'
+		resource url:'/js/jquery.maskedinput-1.3.min.js', disposition:'head'
+		
+        resource url:'/css/theme/jquery-ui-1.8.2.custom.css'
+		resource url:'/css/style2.css', disposition: 'head'
+		
     }
 
     home {
@@ -71,6 +80,10 @@ grails.resources.modules = {
         resource url: '/js/calendar.js'
         resource url: '/css/calendar.css'
     }
+	grids {
+		dependsOn 'core'
+		resource url: '/css/flexible-grids.css'	
+	}
 
 }
 
