@@ -14,15 +14,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <title><g:layoutTitle default="Ekklesis - Inicio " /></title>
 <!-- stylesheets  -->
-<link rel="stylesheet"
-	href="${resource(dir: 'css', file: 'style2.css')}" type="text/css">
-<link rel="stylesheet"
-	href="${resource(dir: 'css/theme', file: 'jquery-ui-1.8.2.custom.css')}"
-	type="text/css">
+
 <!-- End of styleshets  -->
-<link rel="stylesheet"
-	href="${resource(dir: 'css', file: 'rese2t.css')}"
-	type="text/css">
 
 <link rel="stylesheet"
 	href="${resource(dir: 'css', file: '760.css')}"
@@ -30,33 +23,15 @@
 <link rel="stylesheet"
 	href="${resource(dir: 'css', file: '760.margin.css')}"
         type="text/css">
-<%--<link rel="stylesheet"
-	href="${resource(dir: 'css', file: 'text2.css')}"
-	type="text/css">
---%><!-- Scripts  -->
-<script type="text/javascript"
-	src="${resource(dir: 'js', file: 'jquery-1.4.2.min.js')}"></script>
-<script type="text/javascript"
-	src="${resource(dir: 'js', file: 'jquery-ui-1.8.2.custom.min.js')}"></script>
-<script type="text/javascript"
-	src="${resource(dir: 'js', file: 'jQuery.tree.js')}"></script>
-<script type="text/javascript"
-	src="${resource(dir: 'js', file: 'cufon-yui.js')}"></script>
-<script type="text/javascript"
-	src="${resource(dir: 'js', file: 'jquery.dataTables.min.js')}"></script>
-<script type="text/javascript"
-	src="${resource(dir: 'js', file: 'Quicksand_Book_400.font.js')}"></script>
-<!-- <script type="text/javascript"
-	src="${resource(dir: 'js', file: 'raphael-min.js')}"></script>
-<script type="text/javascript"
-	src="${resource(dir: 'js', file: 'graphix.0.9.min.js')}"></script>-->
-<script type="text/javascript"
-	src="${resource(dir: 'js', file: 'custom.js')}"></script>
-<script type="text/javascript"
-	src="${resource(dir: 'js', file: 'jquery.maskedinput-1.3.min.js')}"></script>
+
+<!-- Scripts  -->
+
+<r:require module="core" />
+<r:require module="grids" />
 <!-- End of Scripts  -->
-<g:layoutHead />
 <r:layoutResources />
+<g:layoutHead />
+
 
 </head>
 

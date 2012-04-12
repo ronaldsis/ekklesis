@@ -1,5 +1,5 @@
 <ul id="dock">
-	<li><a href="#" class="dock-active"><r:img	uri="/images/icons/house_go.png" />Inicio</a></li>
+	<li><a href="${request.contextPath}/" class="dock-active"><r:img	uri="/images/icons/house_go.png" />Inicio</a></li>
 	<li><a href="#" onclick="self.location='${request.contextPath}/persona/';"><r:img uri="/images/icons/user.png" />Personas</a></li>
 	<li><a href="#" onclick="self.location='${request.contextPath}/grupo/';"><r:img uri="/images/icons/groups.png" height='32px' width='32px' />Grupos</a></li>
 	<li><a href="#" onclick="self.location='${request.contextPath}/familia/';"><r:img uri="/images/icons/family.png" height='32px' width='32px' />Familias</a></li>
