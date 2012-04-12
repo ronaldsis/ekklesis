@@ -13,7 +13,7 @@
 
   <div id="main-panel">
     <div class="ae-widget-sidebar minimizable">
-      <h4 class="ae-widget-header">Grupo</h4>
+      <h4 class="ae-widget-header">Mostrar Grupo</h4>
       <div class="ae-widget-content">
         <div id="show-grupo"
              class="content scaffold-show" role="main">

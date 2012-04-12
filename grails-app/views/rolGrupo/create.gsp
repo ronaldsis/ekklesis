@@ -15,7 +15,7 @@
 <body>
 	<div id="main-panel">
 		<div class="ae-widget-sidebar minimizable">
-                  <h4 class="ae-widget-header">Registrar Relaci&oacute;n Rol-Grupo</h4>
+                  <h4 class="ae-widget-header">Registrar Relaci&oacute;n Rol Grupo</h4>
 			<div class="ae-widget-content">
 				<div id="create-rolGrupo"
 					class="content scaffold-create" role="main">

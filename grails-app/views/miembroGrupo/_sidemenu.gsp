@@ -7,18 +7,12 @@
 		<!--  Start of Widget Content -->
 
 		<ul class="side-menu">
-			<li><a href="#">Iglesia </a>
+                  <li><a href="#">Relaci&oacute;n Miembro Grupo </a>
 				<ul>
-					<li><g:link controller="iglesia" action="create">Ingresar Datos</g:link></li>
-					<li><g:link controller="iglesia" action="show" id="1">Informaci&oacute;n</g:link></li>
-					<li><a href="/iglesia/create">Editar Informaci&oacute;n</a></li>
+					<li><g:link controller="miembroGrupo" action="create" onClick="self.location='${request.contextPath}/${controllerName}/create';">Registrar</g:link></li>
+					<li><g:link controller="miembroGrupo" action="list" onClick="self.location='${request.contextPath}/${controllerName}/list';">Listar</g:link></li>
 				</ul></li>
-			<li><a href="#">Miembro</a>
-				<ul>
-					<li><a href="#">Registrar Miembro</a></li>
-					<li><a href="#">Buscar Miembro</a></li>
-					<li><a href="#">Ver todos</a></li>
-				</ul></li>
+			
 			
 		</ul>
 

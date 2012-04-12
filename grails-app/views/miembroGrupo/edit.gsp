@@ -15,7 +15,7 @@
 		<div class="ae-widget-sidebar minimizable">
 			<h4 class="ae-widget-header">
 				Editar
-				<g:message code="default.edit.label" args="[entityName]" />
+                                Relaci&oacute;n Miembro Grupo
 			</h4>
 			<div class="ae-widget-content">
 				<div id="edit-miembroGrupo"
