@@ -1,8 +1,8 @@
-dataSource {
+    dataSource {
     pooled = true
-    driverClassName = "org.h2.Driver"
-    username = "sa"
-    password = ""
+    driverClassName = "org.postgresql.Driver"
+    username = "postgres"
+    password = "postgres"
 }
 hibernate {
     cache.use_second_level_cache = true
@@ -20,13 +20,23 @@ environments {
     test {
         dataSource {
             dbCreate = "update"
-            url = "jdbc:h2:mem:testDb;MVCC=TRUE"
+            url = "jdbc:postgresql:testDb;MVCC=TRUE"
         }
     }
     production {
+        
         dataSource {
+            dbCreate = "create-drop" // one of 'create', 'create-drop','update'
+            driverClassName = "org.postgresql.Driver"
+            url = "jdbc:postgresql://localhost:5432/ekklesis"
+            dialect = org.hibernate.dialect.PostgreSQLDialect
+            username = "postgres"
+            password = "postgres" 
+        }
+            
+        /*dataSource {
             dbCreate = "update"
-            url = "jdbc:h2:prodDb;MVCC=TRUE"
+            url = "jdbc:postgresql:prodDb;MVCC=TRUE"
             pooled = true
             properties {
                maxActive = -1
@@ -38,6 +48,6 @@ environments {
                testOnReturn=true
                validationQuery="SELECT 1"
             }
-        }
+        }*/
     }
 }
