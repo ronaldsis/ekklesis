@@ -12,7 +12,7 @@
 <body>
 	<div id="main-panel">
 		<div class="ae-widget-sidebar minimizable">
-			<h4 class="ae-widget-header">Lista de <g:message code="default.list.label" args="[entityName]" /></h4>
+			<h4 class="ae-widget-header">Lista de Municipios</h4>
 			<div class="ae-widget-content">
 				<div id="list-municipio"
 					class="content scaffold-list" role="main">

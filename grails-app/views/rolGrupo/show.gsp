@@ -13,7 +13,7 @@
 
   <div id="main-panel">
     <div class="ae-widget-sidebar minimizable">
-      <h4 class="ae-widget-header">Perfil de Iglesia</h4>
+      <h4 class="ae-widget-header">Mostrar Relaci&oacute;n Rol-Grupo</h4>
       <div class="ae-widget-content">
         <div id="show-rolGrupo"
              class="content scaffold-show" role="main">
@@ -25,6 +25,15 @@
           </g:if>
           <ol class="property-list rolGrupo">
 
+            <g:if test="${rolGrupoInstance?.rol}">
+              <li class="fieldcontain">
+                <span id="rol-label" class="property-label"><g:message code="rolGrupo.rol.label" default="Rol" /></span>
+
+                <span class="property-value" aria-labelledby="rol-label"><g:fieldValue bean="${rolGrupoInstance}" field="rol"/></span>
+
+              </li>
+            </g:if>
+            
             <g:if test="${rolGrupoInstance?.descripcion}">
               <li class="fieldcontain">
                 <span id="descripcion-label" class="property-label"><g:message code="rolGrupo.descripcion.label" default="Descripcion" /></span>
@@ -53,15 +62,7 @@
 
               </li>
             </g:if>
-
-            <g:if test="${rolGrupoInstance?.rol}">
-              <li class="fieldcontain">
-                <span id="rol-label" class="property-label"><g:message code="rolGrupo.rol.label" default="Rol" /></span>
-
-                <span class="property-value" aria-labelledby="rol-label"><g:fieldValue bean="${rolGrupoInstance}" field="rol"/></span>
-
-              </li>
-            </g:if>
+             
 
           </ol>
           <g:form>
