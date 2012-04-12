@@ -12,7 +12,7 @@
 <body>
 	<div id="main-panel">
 		<div class="ae-widget-sidebar minimizable">
-                  <h4 class="ae-widget-header">Lista de Relaci&oacute;n Miembro-Familia</h4>
+                  <h4 class="ae-widget-header">Lista de Relaci&oacute;n Miembro Familia</h4>
 			<div class="ae-widget-content">
 				<div id="list-miembroFamilia"
 					class="content scaffold-list" role="main">

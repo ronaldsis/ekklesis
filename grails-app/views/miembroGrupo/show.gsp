@@ -13,7 +13,7 @@
 
 	<div id="main-panel">
 		<div class="ae-widget-sidebar minimizable">
-			<h4 class="ae-widget-header">Perfil de Iglesia</h4>
+                  <h4 class="ae-widget-header">Mostrar Relaci&oacute;n Miembro Grupo</h4>
 			<div class="ae-widget-content">
 				<div id="show-miembroGrupo"
 					class="content scaffold-show" role="main">

@@ -13,8 +13,7 @@
 
           <li><g:link controller="estado" action="create" onClick="self.location='${request.contextPath}/${controllerName}/create';">Registrar</g:link></li>
       <li><g:link controller="estado" action="list" onClick="self.location='${request.contextPath}/${controllerName}/list';">Listar</g:link></li>
-      <li><g:link controller="estado" action="show" onClick="self.location='${request.contextPath}/${controllerName}/show/1';">Mostrar</g:link></li>
-      <li><g:link controller="estado" action="edit" onClick="self.location='${request.contextPath}/${controllerName}/edit/1';">Editar</g:link></li>
+      
 
 
     </ul>
