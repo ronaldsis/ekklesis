@@ -47,7 +47,7 @@
     <!--Salto de Linea-->
     <div class="clear"></div>
     <div class="grid_20">&nbsp;</div>
-    
+
     <!--Salto de Linea-->
     <div class="clear"></div>
     <div class="grid_20">&nbsp;</div>

@@ -15,7 +15,7 @@
 <body>
 	<div id="main-panel">
 		<div class="ae-widget-sidebar minimizable">
-			<h4 class="ae-widget-header">Registrar <g:message code="default.create.label" args="[entityName]" /></h4>
+			<h4 class="ae-widget-header">Registrar Miembros de un Grupo</h4>
 			<div class="ae-widget-content">
 				<div id="create-miembroGrupo"
 					class="content scaffold-create" role="main">
