@@ -13,7 +13,7 @@
 
   <div id="main-panel">
     <div class="ae-widget-sidebar minimizable">
-      <h4 class="ae-widget-header">Mostrar Estado</h4>
+      <h4 class="ae-widget-header">Perfil de Iglesia</h4>
       <div class="ae-widget-content">
         <div id="show-estado"
              class="content scaffold-show" role="main">
@@ -54,14 +54,14 @@
                 <g:hiddenField name="id"
                                value="${estadoInstance?.id}" /> 
                 
-                
                 <g:actionSubmit class="edit button" action="edit" id="${estadoInstance?.id}"
-                                    value="${message(code: 'default.button.edit.label', default: 'Edit')}" />
-                
+                                value="${message(code: 'default.button.edit.label', default: 'Edit')}" />
+
                 </td>
-                <td><g:actionSubmit class="delete button" action="delete"
-                                    value="${message(code: 'default.button.delete.label', default: 'Delete')}"
-                                    onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
+                <td>
+                <g:actionSubmit class="delete button" action="delete"
+                                value="${message(code: 'default.button.delete.label', default: 'Delete')}"
+                                onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
                 </td>
                 </tr>
               </table>

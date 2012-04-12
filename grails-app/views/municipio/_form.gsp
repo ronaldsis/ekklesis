@@ -17,7 +17,7 @@
         <g:message code="municipio.nombre.label" default="Nombre" />
 
       </label>
-      <g:textField name="nombre" value="${municipioInstance?.nombre}"/>
+      <g:textField name="nombre" value="${municipioInstance?.nombre}" class="long ui-corner-all"/>
     </div>  
   </div>
 
@@ -27,7 +27,7 @@
         <g:message code="municipio.estado.label" default="Estado" />
         <span class="required-indicator">*</span>
       </label>
-      <g:select id="estado" name="estado.id" from="${org.ekklesis.Estado.list()}" optionKey="id" required="" value="${municipioInstance?.estado?.id}" class="many-to-one"/>
+      <g:select id="estado" name="estado.id" from="${org.ekklesis.Estado.list()}" optionKey="id" required="" value="${municipioInstance?.estado?.id}" class="many-to-one ui-widget ui-widget-content ui-corner-left"/>
     </div>  
   </div>
 
