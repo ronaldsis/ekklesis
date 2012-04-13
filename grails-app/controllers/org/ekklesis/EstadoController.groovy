@@ -1,5 +1,6 @@
 package org.ekklesis
 
+import grails.converters.JSON
 import org.springframework.dao.DataIntegrityViolationException
 
 class EstadoController {
@@ -10,6 +11,11 @@ class EstadoController {
         redirect(action: "list", params: params)
     }
 
+	def ajaxGetMunicipios ={
+		def estado = Estado.get(params.id)
+		render estado?.municipios as JSON
+	}
+	
     def list() {
         params.max = Math.min(params.max ? params.int('max') : 10, 100)
         [estadoInstanceList: Estado.list(params), estadoInstanceTotal: Estado.count()]
