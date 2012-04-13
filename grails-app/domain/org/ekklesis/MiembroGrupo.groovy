@@ -12,6 +12,7 @@ package org.ekklesis
 
 class MiembroGrupo  {
     Date fechaIngreso
+	Date fechaSalida
     Boolean estatus
 
     static belongsTo=[
@@ -19,6 +20,10 @@ class MiembroGrupo  {
         rol:RolGrupo, grupo:Grupo
     ]
 
+	static constraints = {
+			fechaSalida nullable:true	
+		}
+	
     String toString(){
         "${nombres}"
     }
