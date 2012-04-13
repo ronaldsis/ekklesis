@@ -8,6 +8,8 @@
 <g:set var="entityName"
 	value="${message(code: 'grupo.label', default: 'Grupo')}" />
 <title><g:message code="default.list.label" args="[entityName]" /></title>
+
+
 </head>
 <body>
 	<div id="main-panel">
@@ -29,11 +31,7 @@
 					
 						<th><g:message code="grupo.descripcion.label" default="Descripcion" /></th>
 					
-						<th><g:message code="grupo.dateCreated.label" default="Date Created" /></th>
-					
-						<th><g:message code="grupo.iglesia.label" default="Iglesia" /></th>
-					
-						<th><g:message code="grupo.lastUpdated.label" default="Last Updated" /></th>
+						<th><g:message code="grupo.dateCreated.label" default="Fecha Creado" /></th>
 					
 						<th><g:message code="grupo.tipoGrupo.label" default="Tipo Grupo" /></th>
 					
@@ -49,10 +47,6 @@
 						<td>${fieldValue(bean: grupoInstance, field: "descripcion")}</td>
 					
 						<td><g:formatDate date="${grupoInstance.dateCreated}" /></td>
-					
-						<td>${fieldValue(bean: grupoInstance, field: "iglesia")}</td>
-					
-						<td><g:formatDate date="${grupoInstance.lastUpdated}" /></td>
 					
 						<td>${fieldValue(bean: grupoInstance, field: "tipoGrupo")}</td>
 					
