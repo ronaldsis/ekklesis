@@ -284,7 +284,7 @@
 		color:#888;
 	}
 
-	.box {
+	.box2 {
 		border-radius: 0.3em;
 		border-width: 1px;
 		border-style: solid;
@@ -299,7 +299,7 @@
 		margin: 1.5em 0 0 0;
 	}
 
-	.box > *:first-child {
+	.box2 > *:first-child {
 		margin-top: 0;
 	}
 
@@ -319,7 +319,7 @@
 		line-height: 12px;
 	}
 
-	.info {
+	.info2 {
 		background:#f4f4f4;
 	}
 
