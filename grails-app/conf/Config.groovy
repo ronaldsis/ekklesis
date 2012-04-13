@@ -49,6 +49,16 @@ grails.resources.modules = {
 		resource url:'/css/style2.css', disposition: 'head'
 		
     }
+	
+	jqtabs {
+			resource url:'/css/yaml/add-ons/accessible-tabs/jquery.tabs.js'
+			resource url:'/css/yaml/add-ons/accessible-tabs/tabs.css'
+		
+		}
+	
+	utiles {
+			resource url:'/js/utiles.js'
+		}
 
     home {
         resource url:'/css/home.css'
