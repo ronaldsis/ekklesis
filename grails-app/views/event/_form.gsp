@@ -50,7 +50,7 @@
 <div
 	class="fieldcontain ${hasErrors(bean: eventInstance, field: 'description', 'error')}">
 	<label for="description"><g:message
-			code="event.description.label" default="Description" /></label>
+			code="event.description.label" default="Descripcion" /></label>
 	<g:textArea name="description" value="${eventInstance?.description}" />
 </div>
 
