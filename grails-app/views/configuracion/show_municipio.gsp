@@ -17,9 +17,7 @@
       <div class="ae-widget-content">
         <div id="show-municipio"
              class="content scaffold-show" role="main">
-          <h1>
-            <g:message code="default.show.label" args="[entityName]" />
-          </h1>
+          
           <g:if test="${flash.message}">
             <div class="message success" role="status">${flash.message}</div>
           </g:if>
@@ -29,7 +27,7 @@
               <li class="fieldcontain">
                 <span id="estado-label" class="property-label"><g:message code="municipio.estado.label" default="Estado" /></span>
 
-                <span class="property-value" aria-labelledby="estado-label"><g:link controller="estado" action="show" id="${municipioInstance?.estado?.id}">${municipioInstance?.estado?.encodeAsHTML()}</g:link></span>
+                <span class="property-value" aria-labelledby="estado-label"><g:link controller="configuracion" action="show_municipio" id="${municipioInstance?.estado?.id}">${municipioInstance?.estado?.encodeAsHTML()}</g:link></span>
 
               </li>
             </g:if>
@@ -52,12 +50,12 @@
                 <g:hiddenField name="id"
                                value="${municipioInstance?.id}" /> 
                                 
-                <g:actionSubmit class="edit button" action="edit" id="${municipioInstance?.id}"
+                <g:actionSubmit class="edit button" action="edit_municipio" id="${municipioInstance?.id}"
                                     value="${message(code: 'default.button.edit.label', default: 'Edit')}" />
                 
                 </td>
                 <td>
-                <g:actionSubmit class="delete button" action="delete"
+                <g:actionSubmit class="delete button" action="delete_municipio"
                                 value="${message(code: 'default.button.delete.label', default: 'Delete')}"
                                 onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
                 </td>

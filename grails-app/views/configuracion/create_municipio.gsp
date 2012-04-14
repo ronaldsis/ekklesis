@@ -29,7 +29,7 @@
               </g:eachError>
             </div>
           </g:hasErrors>
-          <g:form action="save"
+          <g:form action="save_municipio"
                   >
             <fieldset class="form">
               <g:render template="form_municipio" />
