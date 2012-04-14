@@ -1,7 +1,6 @@
 package org.ekklesis
 
 class Persona {
-	static searchable = true
     String nombres
     String apellidos
     String sexo
@@ -12,13 +11,16 @@ class Persona {
     //redes sociales
     String facebook
     String twitter
+    Asistencia asistencia
     
     static hasMany=[
         direcciones:Direccion,
         telefonos:Telefono, 
         emails:Email,
         fechasImportantes:FechaImportante,
-        membresiasGrupos:MiembroGrupo
+        membresiasGrupos:MiembroGrupo,
+        //asistencias:AsistenciaPersona,
+        reuniones:ReunionPersona
     ]
     
     static belongsTo=[
