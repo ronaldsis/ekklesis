@@ -6,7 +6,7 @@
     <meta name="layout" content="lpages">
     <g:set var="entityName" value="${message(code: 'event.label', default: 'Event')}"/>
     <title><g:message code="default.edit.label" args="[entityName]"/></title>
-
+	<r:require module="utiles" />
     <r:require module="calendar" />
 
 </head>

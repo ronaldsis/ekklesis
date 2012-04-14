@@ -180,7 +180,7 @@ function showRecurPopup() {
 
     var recurPopup = $("#recurPopup").dialog({
         title: 'Repetir',
-        width: 400,
+        width: 700,
         modal: true,
         open: function(event, ui) {
           $("#recurOptions").show().appendTo("#recurPopup");
