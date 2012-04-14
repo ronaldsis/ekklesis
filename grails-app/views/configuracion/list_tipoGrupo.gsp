@@ -12,7 +12,7 @@
 <body>
 	<div id="main-panel">
 		<div class="ae-widget-sidebar minimizable">
-			<h4 class="ae-widget-header">Lista de Tipos de Grupos</h4>
+                  <h4 class="ae-widget-header">Configuraci&oacute;n Lista de Tipos de Grupos</h4>
 			<div class="ae-widget-content">
 				<div id="list-tipoGrupo"
 					class="content scaffold-list" role="main">
@@ -36,7 +36,7 @@
 								var="tipoGrupoInstance">
 								<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 									
-						<td><g:link action="show" id="${tipoGrupoInstance.id}">${fieldValue(bean: tipoGrupoInstance, field: "descripcion")}</g:link></td>
+						<td><g:link action="show_tipoGrupo" id="${tipoGrupoInstance.id}">${fieldValue(bean: tipoGrupoInstance, field: "descripcion")}</g:link></td>
 					
 						<td>${fieldValue(bean: tipoGrupoInstance, field: "nombre")}</td>
 					

@@ -15,7 +15,7 @@
 <body>
   <div id="main-panel">
     <div class="ae-widget-sidebar minimizable">
-      <h4 class="ae-widget-header">Registrar Tipo de Grupo</h4>
+      <h4 class="ae-widget-header">Configuraci&oacute;n Registrar Tipo de Grupo</h4>
       <div class="ae-widget-content">
         <div id="create-tipoGrupo"
              class="content scaffold-create" role="main">
@@ -32,7 +32,7 @@
           <g:form action="save"
                   >
             <fieldset class="form">
-              <g:render template="form" />
+              <g:render template="form_tipoGrupo" />
             </fieldset>
             <fieldset class="buttons">
               <g:submitButton name="create" class="save button"

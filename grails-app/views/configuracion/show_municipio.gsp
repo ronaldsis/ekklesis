@@ -1,21 +1,21 @@
 
 
-<%@ page import="org.ekklesis.Estado" %>
+<%@ page import="org.ekklesis.Municipio" %>
 <!doctype html>
 <html>
   <head>
     <meta name="layout" content="lpages">
   <g:set var="entityName"
-         value="${message(code: 'estado.label', default: 'Estado')}" />
+         value="${message(code: 'municipio.label', default: 'Municipio')}" />
   <title><g:message code="default.show.label" args="[entityName]" /></title>
 </head>
 <body>
 
   <div id="main-panel">
     <div class="ae-widget-sidebar minimizable">
-      <h4 class="ae-widget-header">Mostrar Estado</h4>
+      <h4 class="ae-widget-header">Configuraci&oacute;n Mostrar Municipio</h4>
       <div class="ae-widget-content">
-        <div id="show-estado"
+        <div id="show-municipio"
              class="content scaffold-show" role="main">
           <h1>
             <g:message code="default.show.label" args="[entityName]" />
@@ -23,24 +23,22 @@
           <g:if test="${flash.message}">
             <div class="message success" role="status">${flash.message}</div>
           </g:if>
-          <ol class="property-list estado">
+          <ol class="property-list municipio">
 
-            <g:if test="${estadoInstance?.municipios}">
+            <g:if test="${municipioInstance?.estado}">
               <li class="fieldcontain">
-                <span id="municipios-label" class="property-label"><g:message code="estado.municipios.label" default="Municipios" /></span>
+                <span id="estado-label" class="property-label"><g:message code="municipio.estado.label" default="Estado" /></span>
 
-              <g:each in="${estadoInstance.municipios}" var="m">
-                <span class="property-value" aria-labelledby="municipios-label"><g:link controller="municipio" action="show" id="${m.id}">${m?.encodeAsHTML()}</g:link></span>
-              </g:each>
+                <span class="property-value" aria-labelledby="estado-label"><g:link controller="estado" action="show" id="${municipioInstance?.estado?.id}">${municipioInstance?.estado?.encodeAsHTML()}</g:link></span>
 
               </li>
             </g:if>
 
-            <g:if test="${estadoInstance?.nombre}">
+            <g:if test="${municipioInstance?.nombre}">
               <li class="fieldcontain">
-                <span id="nombre-label" class="property-label"><g:message code="estado.nombre.label" default="Nombre" /></span>
+                <span id="nombre-label" class="property-label"><g:message code="municipio.nombre.label" default="Nombre" /></span>
 
-                <span class="property-value" aria-labelledby="nombre-label"><g:fieldValue bean="${estadoInstance}" field="nombre"/></span>
+                <span class="property-value" aria-labelledby="nombre-label"><g:fieldValue bean="${municipioInstance}" field="nombre"/></span>
 
               </li>
             </g:if>
@@ -52,11 +50,11 @@
                 <tr>
                   <td>
                 <g:hiddenField name="id"
-                               value="${estadoInstance?.id}" /> 
+                               value="${municipioInstance?.id}" /> 
+                                
+                <g:actionSubmit class="edit button" action="edit" id="${municipioInstance?.id}"
+                                    value="${message(code: 'default.button.edit.label', default: 'Edit')}" />
                 
-                <g:actionSubmit class="edit button" action="edit" id="${estadoInstance?.id}"
-                                value="${message(code: 'default.button.edit.label', default: 'Edit')}" />
-
                 </td>
                 <td>
                 <g:actionSubmit class="delete button" action="delete"
