@@ -7,6 +7,6 @@
 	<li><a href="#" onclick="self.location='${request.contextPath}/persona/';"><r:img uri="/images/icons/estimates.png" />Estad.</a></li>
 	<li><a href="#" onclick="self.location='${request.contextPath}/persona/';"><r:img uri="/images/icons/archive.png" height='32px' width='32px' />Reportes</a></li>
 	<li><a href="#" onclick="self.location='${request.contextPath}/event/';"><r:img uri="/images/icons/events.png" />Eventos</a></li>
-	<li><a href="#" onclick="self.location='${request.contextPath}/persona/';"><r:img uri="/images/icons/admin.png" height='32px' width='32px' />Conf.</a></li>
+	<li><a href="#" onclick="self.location='${request.contextPath}/configuracion/';"><r:img uri="/images/icons/admin.png" height='32px' width='32px' />Conf.</a></li>
 	<li><a href="#" onclick="self.location='${request.contextPath}/persona/';"><r:img uri="/images/icons/key.png" height='32px' width='32px'/>seguridad</a></li>
 </ul>
