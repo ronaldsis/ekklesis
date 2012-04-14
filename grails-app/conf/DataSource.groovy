@@ -12,10 +12,23 @@ hibernate {
 // environment specific settings
 environments {
     development {
-        dataSource {
+        /*dataSource {
             dbCreate = "update" // one of 'create', 'create-drop', 'update', 'validate', ''
             url = "jdbc:h2:mem:devDb;MVCC=TRUE"
+        }*/
+        
+        // relative to web-app
+	//jasper.dir.reports = '../src/reports'
+            
+        dataSource {
+            dbCreate = "create" // one of 'create', 'create-drop','update'
+            driverClassName = "org.postgresql.Driver"
+            url = "jdbc:postgresql://localhost:5432/ekklesis"
+            dialect = org.hibernate.dialect.PostgreSQLDialect
+            username = "postgres"
+            password = "postgres" 
         }
+            
     }
     test {
         dataSource {

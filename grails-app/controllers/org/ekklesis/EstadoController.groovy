@@ -6,6 +6,12 @@ class EstadoController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
 
+    def reporte={
+        //chain(controller: "jasper", action: "index", model: [data: Estado.list()], params:params)
+        chain(controller: "jasper", action: "index", model: [data: Estado.list()], params:params)
+    }
+    
+    
     def index() {
         redirect(action: "list", params: params)
     }
@@ -26,14 +32,14 @@ class EstadoController {
             return
         }
 
-		flash.message = message(code: 'default.created.message', args: [message(code: 'estado.label', default: 'Estado'), estadoInstance.id])
+        flash.message = message(code: 'default.created.message', args: [message(code: 'estado.label', default: 'Estado'), estadoInstance.id])
         redirect(action: "show", id: estadoInstance.id)
     }
 
     def show() {
         def estadoInstance = Estado.get(params.id)
         if (!estadoInstance) {
-			flash.message = message(code: 'default.not.found.message', args: [message(code: 'estado.label', default: 'Estado'), params.id])
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'estado.label', default: 'Estado'), params.id])
             redirect(action: "list")
             return
         }
@@ -64,7 +70,7 @@ class EstadoController {
             def version = params.version.toLong()
             if (estadoInstance.version > version) {
                 estadoInstance.errors.rejectValue("version", "default.optimistic.locking.failure",
-                          [message(code: 'estado.label', default: 'Estado')] as Object[],
+                    [message(code: 'estado.label', default: 'Estado')] as Object[],
                           "Another user has updated this Estado while you were editing")
                 render(view: "edit", model: [estadoInstance: estadoInstance])
                 return
@@ -78,26 +84,29 @@ class EstadoController {
             return
         }
 
-		flash.message = message(code: 'default.updated.message', args: [message(code: 'estado.label', default: 'Estado'), estadoInstance.id])
+        flash.message = message(code: 'default.updated.message', args: [message(code: 'estado.label', default: 'Estado'), estadoInstance.id])
         redirect(action: "show", id: estadoInstance.id)
     }
 
     def delete() {
         def estadoInstance = Estado.get(params.id)
         if (!estadoInstance) {
-			flash.message = message(code: 'default.not.found.message', args: [message(code: 'estado.label', default: 'Estado'), params.id])
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'estado.label', default: 'Estado'), params.id])
             redirect(action: "list")
             return
         }
 
         try {
             estadoInstance.delete(flush: true)
-			flash.message = message(code: 'default.deleted.message', args: [message(code: 'estado.label', default: 'Estado'), params.id])
+            flash.message = message(code: 'default.deleted.message', args: [message(code: 'estado.label', default: 'Estado'), params.id])
             redirect(action: "list")
         }
         catch (DataIntegrityViolationException e) {
-			flash.message = message(code: 'default.not.deleted.message', args: [message(code: 'estado.label', default: 'Estado'), params.id])
+            flash.message = message(code: 'default.not.deleted.message', args: [message(code: 'estado.label', default: 'Estado'), params.id])
             redirect(action: "show", id: params.id)
         }
     }
+    
+    
+    
 }

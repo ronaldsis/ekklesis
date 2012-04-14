@@ -13,7 +13,7 @@
 <body>
   <div id="main-panel">
     <div class="ae-widget-sidebar minimizable">
-      <h4 class="ae-widget-header">Editar Tipo de Grupo  </h4>
+      <h4 class="ae-widget-header">Configuraci&oacute;n Editar Tipo de Grupo  </h4>
       <div class="ae-widget-content">
         <div id="edit-tipoGrupo"
              class="content scaffold-edit" role="main">
@@ -33,14 +33,14 @@
             <g:hiddenField name="id" value="${tipoGrupoInstance?.id}" />
             <g:hiddenField name="version" value="${tipoGrupoInstance?.version}" />
             <fieldset class="form">
-              <g:render template="form" />
+              <g:render template="form_tipoGrupo" />
             </fieldset>
             <fieldset class="buttons">
 
               <table>
                 <tr>
                   <td>
-                <g:actionSubmit class="save button" action="update"
+                <g:actionSubmit class="save button" action="update_tipoGrupo"
                                 value="${message(code: 'default.button.update.label', default: 'Update')}" />
                 </td>
                 <td>
