@@ -6,7 +6,7 @@
 <g:set var="entityName"
 	value="${message(code: 'event.label', default: 'Event')}" />
 <title>Registrar Evento</title>
-
+<r:require module="utiles" />
 <r:require module="calendar" />
 </head>
 <body>

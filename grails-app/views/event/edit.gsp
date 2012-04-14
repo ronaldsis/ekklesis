@@ -3,7 +3,7 @@
 <!doctype html>
 <html>
 <head>
-    <meta name="layout" content="main">
+    <meta name="layout" content="lpages">
     <g:set var="entityName" value="${message(code: 'event.label', default: 'Event')}"/>
     <title><g:message code="default.edit.label" args="[entityName]"/></title>
 
@@ -12,19 +12,19 @@
 </head>
 
 <body>
-<a href="#edit-event" class="skip" tabindex="-1"><g:message code="default.link.skip.label"
-                                                            default="Skip to content&hellip;"/></a>
+<div id="main-panel">
+		<div class="ae-widget-sidebar minimizable">
+			<h4 class="ae-widget-header">Editar Evento</h4>
+			<div class="ae-widget-content">
+				<div class="btn-menu " role="navigation" align="right" >
+					<ul>
+						<li><g:link action="index" class="calendar button small">Ver Calendario de Eventos</g:link></li>
+					</ul>
+				</div>
 
-<div class="nav" role="navigation">
-    <ul>
-        <li><a href="${createLink(uri: '/')}" class="home">Home</a></li>
-        <li><g:link action="index" class="calendar">Calendar</g:link></li>
-        <li><g:link action="create" class="create">New Event</g:link></li>
-    </ul>
-</div>
 
 <div id="edit-event" class="content scaffold-edit" role="main">
-    <h1><g:message code="default.edit.label" args="[entityName]"/></h1>
+  
     <g:if test="${flash.message}">
         <div class="message" role="status">${flash.message}</div>
     </g:if>
@@ -45,11 +45,14 @@
             <g:render template="form"/>
         </fieldset>
         <fieldset class="buttons">
-
-            <g:actionSubmit class="save ${eventInstance.isRecurring ? 'recurring' : ''}" action="update"
-                            value="${message(code: 'default.button.update.label', default: 'Update')}"/>
-            <g:actionSubmit class="delete ${eventInstance.isRecurring ? 'recurring' : ''}" action="delete"
-                            value="${message(code: 'default.button.delete.label', default: 'Delete')}" formnovalidate="" />
+<table><tr><td>
+            <g:actionSubmit class="save button ${eventInstance.isRecurring ? 'recurring' : ''}" action="update"
+                            value="${message(code: 'default.button.update.label', default: 'Update')}"/></td>
+                            <td>
+            <g:actionSubmit class="delete button ${eventInstance.isRecurring ? 'recurring' : ''}" action="delete"
+                            value="${message(code: 'default.button.delete.label', default: 'Delete')}" formnovalidate="" /></td>
+                            </tr>
+                            </table>
         </fieldset>
     </g:form>
 
@@ -58,6 +61,9 @@
         <g:render template="editPopup" model="model" />
     </g:if>
 
+</div>
+</div>
+</div>
 </div>
 
 </body>
