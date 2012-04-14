@@ -21,7 +21,7 @@ environments {
 	//jasper.dir.reports = '../src/reports'
             
         dataSource {
-            dbCreate = "create" // one of 'create', 'create-drop','update'
+            dbCreate = "update" // one of 'create', 'create-drop','update'
             driverClassName = "org.postgresql.Driver"
             url = "jdbc:postgresql://localhost:5432/ekklesis"
             dialect = org.hibernate.dialect.PostgreSQLDialect
