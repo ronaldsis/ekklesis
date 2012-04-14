@@ -4,22 +4,22 @@
     <g:hiddenField name="id" value="${eventInstance.id}" />
     <g:hiddenField name="occurrenceStart" value="${occurrenceStart}" />
 
-    <p>Would you like to delete only this event, or all events in the series?</p>
+	<p>¿Quiere usted eliminar solo este evento, o todos los eventos en la serie?</p>
 
     <table>
         <tbody>
         <tr>
-            <td><button type="submit" name="deleteType" value="occurrence">Only this event</button></td>
-            <td>All other events in the series will remain the same.</td>
+            <td><button type="submit" name="deleteType" value="occurrence">Solo este evento</button></td>
+            <td>Todos los otros eventos en la serie permaneceran </td>
         </tr>
 
         <tr>
-            <td><button type="submit" name="deleteType" value="following">All following</button></td>
-            <td>This and all the following events will be changed.</td>
+            <td><button type="submit" name="deleteType" value="following">Todos los que siguen</button></td>
+            <td>This and all the following events will be changed. Este y todos los siguientes eventos seran cabiados</td>
         </tr>
         <tr>
-            <td><button type="submit" name="deleteType" value="all">All events in the series</button></td>
-            <td>All other events in the series will remain the same.</td>
+            <td><button type="submit" name="deleteType" value="all">Todos los eventos en la series</button></td>
+            <td>Todos los otros eventos en la serie permaneceran</td>
         </tr>
         </tbody>
 
