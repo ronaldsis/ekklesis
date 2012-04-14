@@ -44,7 +44,7 @@
                                 value="${message(code: 'default.button.update.label', default: 'Update')}" />
                 </td>
                 <td>
-                <g:actionSubmit class="delete button" action="delete"
+                <g:actionSubmit class="delete button" action="delete_tipoGrupo"
                                 value="${message(code: 'default.button.delete.label', default: 'Delete')}"
                                 formnovalidate=""
                                 onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Esta usted seguro?')}');" />

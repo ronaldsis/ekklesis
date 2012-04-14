@@ -34,15 +34,15 @@
 						<g:hiddenField name="id" value="${municipioInstance?.id}" />
 						<g:hiddenField name="version" value="${municipioInstance?.version}" />
 						<fieldset class="form">
-							<g:render template="form" />
+							<g:render template="form_municipio" />
 						</fieldset>
 						<fieldset class="buttons">
 							<table>
 								<tr>
-									<td><g:actionSubmit class="save button" action="update"
+									<td><g:actionSubmit class="save button" action="update_municipio"
 											value="${message(code: 'default.button.update.label', default: 'Update')}" />
 									</td>
-									<td><g:actionSubmit class="delete button" action="delete"
+									<td><g:actionSubmit class="delete button" action="delete_municipio"
 											value="${message(code: 'default.button.delete.label', default: 'Delete')}"
 											formnovalidate=""
 											onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Esta usted seguro?')}');" />
