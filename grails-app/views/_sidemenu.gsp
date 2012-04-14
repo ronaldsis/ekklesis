@@ -9,8 +9,8 @@
 		<ul class="side-menu">
 			<li><a href="#">Iglesia </a>
 				<ul>
-					<li><g:link controller="familia" action="ed5t" onClick="self.location='${request.contextPath}/iglesia/edit/1';">Editar Informacion</g:link></li>
-					<li><g:link controller="familia" action="create" onClick="self.location='${request.contextPath}/iglesia/show/1';">Informacion]</g:link></li>
+                                  <li><g:link controller="familia" action="ed5t" onClick="self.location='${request.contextPath}/iglesia/edit/1';">Editar Informaci&oacute;n</g:link></li>
+                                <li><g:link controller="familia" action="create" onClick="self.location='${request.contextPath}/iglesia/show/1';">Ver Informaci&oacute;n</g:link></li>
 					
 				</ul>
 			</li>
