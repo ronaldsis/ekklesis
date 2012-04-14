@@ -1,0 +1,10 @@
+syntax: glob
+target
+target-eclipse
+\.orig\..*$
+\.orig$
+\.chg\..*$
+\.rej$
+\.conflict\~$
+*.class
+.project
