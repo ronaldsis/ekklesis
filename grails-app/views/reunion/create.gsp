@@ -1,10 +1,10 @@
-<%@ page import="org.ekklesis.TipoGrupo" %>
+<%@ page import="org.ekklesis.Reunion" %>
 <!doctype html>
 <html>
   <head>
     <meta name="layout" content="lpages">
   <g:set var="entityName"
-         value="${message(code: 'tipoGrupo.label', default: 'TipoGrupo')}" />
+         value="${message(code: 'reunion.label', default: 'Reunion')}" />
   <title><g:message code="default.create.label"
                     args="[entityName]" /></title>
   <g:validationFieldIncludes />
@@ -15,16 +15,16 @@
 <body>
   <div id="main-panel">
     <div class="ae-widget-sidebar minimizable">
-      <h4 class="ae-widget-header">Registrar Tipo de Grupo</h4>
+      <h4 class="ae-widget-header">Registrar Reuni&oacute;n</h4>
       <div class="ae-widget-content">
-        <div id="create-tipoGrupo"
+        <div id="create-reunion"
              class="content scaffold-create" role="main">
           <g:if test="${flash.message}">
             <div class="message success" role="status">${flash.message}</div>
           </g:if>
-          <g:hasErrors bean="${tipoGrupoInstance}">
+          <g:hasErrors bean="${reunionInstance}">
             <div class="error" role="alert">
-              <g:eachError bean="${tipoGrupoInstance}" var="error">
+              <g:eachError bean="${reunionInstance}" var="error">
                 <i><g:message 	error="${error}" /></i>
               </g:eachError>
             </div>
