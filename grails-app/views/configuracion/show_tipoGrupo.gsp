@@ -13,7 +13,7 @@
 
   <div id="main-panel">
     <div class="ae-widget-sidebar minimizable">
-      <h4 class="ae-widget-header">Mostrar Tipo de Grupo</h4>
+      <h4 class="ae-widget-header">Configuraci&oacute;n Mostrar Tipo de Grupo</h4>
       <div class="ae-widget-content">
         <div id="show-tipoGrupo"
              class="content scaffold-show" role="main">
@@ -49,7 +49,7 @@
               <table>
                 <tr>
                   <td>
-                    <g:actionSubmit class="delete button" action="edit" id="${tipoGrupoInstance?.id}"
+                    <g:actionSubmit class="edit button" action="edit_tipoGrupo" id="${tipoGrupoInstance?.id}"
                               value="${message(code: 'default.button.edit.label', default: 'edit')}" />
                   </td>
                   <td>
