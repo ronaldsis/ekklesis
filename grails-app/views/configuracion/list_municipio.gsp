@@ -36,7 +36,7 @@
 								var="municipioInstance">
 								<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 									
-						<td><g:link action="show" id="${municipioInstance.id}">${fieldValue(bean: municipioInstance, field: "estado")}</g:link></td>
+						<td><g:link action="show_municipio" id="${municipioInstance.id}">${fieldValue(bean: municipioInstance, field: "estado")}</g:link></td>
 					
 						<td>${fieldValue(bean: municipioInstance, field: "nombre")}</td>
 					
