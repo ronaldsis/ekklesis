@@ -1,6 +1,7 @@
 package org.ekklesis
 
 class Direccion {
+	static searchable = true
     String dir
     String sector
     Municipio ciudad

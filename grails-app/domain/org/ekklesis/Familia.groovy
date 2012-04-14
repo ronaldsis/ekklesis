@@ -1,6 +1,7 @@
 package org.ekklesis
 
 class Familia {
+	static searchable = true
     String apellidos
     String direccionPrincipal
     String telefonoPrincipal

@@ -1,6 +1,7 @@
 package org.ekklesis
 
 class MiembroFamilia {
+	static searchable = true
     String rol
     static belongsTo=[familia:Familia, persona:Persona]
     static constraints = {

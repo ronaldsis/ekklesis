@@ -1,6 +1,7 @@
 package org.ekklesis
 
 class Grupo {
+	static searchable = true
     String nombre
     String descripcion
     Date dateCreated

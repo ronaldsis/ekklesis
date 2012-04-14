@@ -1,6 +1,7 @@
 package org.ekklesis
 
 class Persona {
+	static searchable = true
     String nombres
     String apellidos
     String sexo

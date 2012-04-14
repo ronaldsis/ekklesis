@@ -11,6 +11,7 @@
 package org.ekklesis
 
 class MiembroGrupo  {
+	static searchable = true
     Date fechaIngreso
 	Date fechaSalida
     Boolean estatus
